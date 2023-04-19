@@ -1,7 +1,7 @@
 <template>
     <el-container style="height: 1080px;">
-        <el-aside width="150px">
-        </el-aside>
+        <!-- <el-aside width="150px">
+        </el-aside> -->
         <el-container>
             <el-header>
                 <el-tabs type="border-card" @tab-click="handleClick">
@@ -29,6 +29,11 @@
                         prop="wave"
                         label="波动"
                         width="100">
+                    </el-table-column>
+                    <el-table-column
+                        prop="_time"
+                        label="创建时间"
+                        width="200">
                     </el-table-column>
                     <el-table-column
                         prop="PREDICT_CONTENT"
