@@ -105,8 +105,7 @@ export default {
         }
     },
     methods: {
-        handleClick(tab, event) {
-            console.log(event)
+        handleClick(tab) {
             switch(tab.label){
                 case "predict":
                     console.log("predict");
