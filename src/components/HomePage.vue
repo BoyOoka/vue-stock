@@ -25,17 +25,22 @@
                         label="名称"
                         width="100">
                     </el-table-column>
-                    <el-table-column
+                    <el-table-column v-if="tableData.length && tableData[0].hasOwnProperty('wave')"
                         prop="wave"
                         label="波动"
                         width="100">
+                    </el-table-column>
+                    <el-table-column v-if="tableData.length && tableData[0].hasOwnProperty('industry')"
+                        prop="industry"
+                        label="行业"
+                        width="200">
                     </el-table-column>
                     <el-table-column
                         prop="_time"
                         label="创建时间"
                         width="200">
                     </el-table-column>
-                    <el-table-column
+                    <el-table-column v-if="tableData.length && tableData[0].hasOwnProperty('PREDICT_CONTENT')"
                         prop="PREDICT_CONTENT"
                         label="内容">
                     </el-table-column>
